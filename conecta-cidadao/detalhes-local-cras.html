@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Detalhes do Local — Conecta Cidadão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <div class="tela">
+    <header>
+      <h1 class="titulo">Detalhes do Local</h1>
+      <div class="divisor"></div>
+      <div class="navegacao">
+        <a class="voltar" href="resultados.html"><img src="assets/voltar.svg" alt="" width="40" height="40">Voltar</a>
+        <a class="ouvir" href="#ouvir"><span class="alto-falante" aria-hidden="true">🔊</span>Ouvir esta página</a>
+      </div>
+      <nav class="trilha" aria-label="Você está em"><ol><li><a href="index.html">Início</a></li><li><a href="beneficios.html">Benefícios</a></li><li><a href="beneficios-saude.html">Saúde</a></li><li><a href="local-atendimento.html">Onde buscar</a></li><li><a href="resultados.html">Resultados</a></li><li aria-current="page">CRAS Região Sul</li></ol></nav>
+    </header>
+
+    <main id="conteudo" class="principal">
+      <section class="conteudo">
+        <article class="cartao cartao--espacado">
+          <h2 class="cartao-titulo--grande cartao-titulo--escuro">CRAS Região Sul</h2>
+
+          <div class="info"><span class="info-rotulo">Endereço:</span><span class="info-valor">Av. Exemplo, 450</span></div>
+          <div class="info"><span class="info-rotulo">Atendimento:</span><span class="info-valor">segunda a sexta</span></div>
+          <div class="info"><span class="info-rotulo">Horário:</span><span class="info-valor">8h às 17h</span></div>
+
+          <div class="separador"></div>
+
+          <p class="orientacao">Antes de sair, confirme os documentos necessários.</p>
+
+          <a class="botao botao--cheio" href="documentos-saude.html">Ver documentos</a>
+        </article>
+      </section>
+    </main>
+
+    <nav class="barra" aria-label="Navegação principal">
+      <a href="index.html"><span class="barra-icone"><img src="assets/casa.svg" alt="" width="26" height="26"></span>Início</a>
+      <a href="beneficios.html"><span class="barra-icone"><img src="assets/coracao.svg" alt="" width="26" height="26"></span>Benefícios</a>
+      <a href="local-atendimento.html" aria-current="page"><span class="barra-icone"><img src="assets/local.svg" alt="" width="26" height="26"></span>Serviços</a>
+      <a href="oportunidades.html"><span class="barra-icone"><img src="assets/maleta.svg" alt="" width="26" height="26"></span>Emprego</a>
+      <a href="ajuda.html"><span class="barra-icone"><img src="assets/ajuda.svg" alt="" width="26" height="26"></span>Ajuda</a>
+    </nav>
+  </div>
+
+  <div class="popup" id="ouvir" role="dialog" aria-modal="true" aria-label="Reproduzindo áudio">
+    <a class="popup-fundo" href="#" aria-label="Fechar" tabindex="-1"></a>
+    <div class="popup-cartao">
+      <input class="popup-pausar sr-only" type="checkbox" id="pausar">
+      <span class="popup-indicador"></span>
+      <a class="popup-fechar" href="#" aria-label="Fechar áudio" title="Fechar">×</a>
+      <p class="popup-status" aria-live="polite"><span aria-hidden="true">🔊</span><span class="tocando">Reproduzindo..</span><span class="pausado">Pausado</span></p>
+      <label class="popup-play" for="pausar" title="Pausar / continuar"><span class="i-pausa" aria-label="Pausar">❚❚</span><span class="i-play" aria-label="Continuar">▶</span></label>
+      <div class="popup-faixa"></div>
+      <p class="popup-origem">Detalhes do Local</p>
+    </div>
+  </div>
+</body>
+</html>
