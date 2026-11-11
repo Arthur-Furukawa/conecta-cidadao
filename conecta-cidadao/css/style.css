@@ -669,3 +669,19 @@ a.opcao { gap: 16px; }
   .barra-icone { width: 52px; height: 32px; }
   .barra-icone img { width: 24px; height: 24px; }
 }
+
+/* ---------- Documentos dentro da tela do local (abre e fecha sem sair da página) ---------- */
+.docs-local summary { list-style: none; }
+.docs-local summary::-webkit-details-marker { display: none; }
+.docs-local summary .fechar { display: none; }
+.docs-local[open] summary { background: var(--branco); }
+.docs-local[open] summary .abrir { display: none; }
+.docs-local[open] summary .fechar { display: inline; }
+.docs-local summary::after { content: "▾"; margin-left: 8px; transition: transform .15s ease; }
+.docs-local[open] summary::after { transform: rotate(180deg); }
+.docs-local-conteudo { display: flex; flex-direction: column; gap: 12px; padding-top: 14px; }
+.docs-local-titulo { font-weight: 600; font-size: 18px; color: var(--texto); }
+.checklist--compacta label { font-size: 20px; min-height: 52px; }
+.checklist--compacta input { width: 28px; height: 28px; }
+.checklist--compacta input::after { font-size: 20px; }
+.docs-local .checklist-pronto { font-size: 18px; }
