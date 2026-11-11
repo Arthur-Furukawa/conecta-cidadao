@@ -35,7 +35,18 @@
 
           <p class="orientacao">Antes de sair, confirme os documentos necessários.</p>
 
-          <a class="botao botao--cheio" href="documentos-saude.html">Ver documentos</a>
+          <details class="docs-local">
+            <summary class="botao botao--cheio"><span class="abrir">Ver documentos</span><span class="fechar">Ocultar documentos</span></summary>
+            <div class="docs-local-conteudo">
+              <p class="docs-local-titulo">Leve ao atendimento (marque o que já separou):</p>
+              <ul class="checklist checklist--compacta">
+                <li><label><input type="checkbox"><span>RG ou CNH</span></label></li>
+                <li><label><input type="checkbox"><span>CPF</span></label></li>
+                <li><label><input type="checkbox"><span>Comprovante de Residência</span></label></li>
+              </ul>
+              <p class="checklist-pronto" aria-live="polite">✓ Tudo pronto! Você já pode ir a este local.</p>
+            </div>
+          </details>
         </article>
       </section>
     </main>
